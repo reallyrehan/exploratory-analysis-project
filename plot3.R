@@ -7,7 +7,6 @@ balt <- subset(data,fips=='24510')
 
 library(ggplot2)
 data$type <- as.factor(data$type)
-summary(data$type)
 
 data.by.group <- data %>% 
         group_by(year,type) %>% 
